@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="326dp"
+    android:layout_height="111dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/card">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPlayerName"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Name"
+            android:fontFamily="@font/open_sans_extra_bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Country :"
+            android:fontFamily="@font/open_sans"/>
+            <ImageView
+                android:id="@+id/imgCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/country"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Position :"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/txtPositon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GK"
+                android:textSize="12sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MORE"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="#0D235F"
+            android:fontFamily="@font/open_sans_extra_bold"
+            android:background="@drawable/btn_more"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
